@@ -1,0 +1,50 @@
+[
+    {
+        "id": 11,
+        "name": "Ishtiak Ahmed",
+        "img": "https://i.ibb.co/zxsTZC1/d1.jpg",
+        "designation": "Cardiology Specialist"
+    },
+    {
+        "id": 12,
+        "name": "Nafia Mohona",
+        "img": "https://i.ibb.co/0Zq65KJ/d2.jpg",
+        "designation": "Cardiology Specialist"
+    },
+    {
+        "id": 13,
+        "name": "Noman Ahmed",
+        "img": "https://i.ibb.co/WDYBtSJ/d3.jpg",
+        "designation": "Internal Medicine"
+    },
+    {
+        "id": 14,
+        "name": "Nawrin Sultana",
+        "img": "https://i.ibb.co/NmWCkQz/d4.jpg",
+        "designation": "Internal Medicine"
+    },
+    {
+        "id": 15,
+        "name": "Turna Malhotra",
+        "img": "https://i.ibb.co/s3Ln25k/d5.jpg",
+        "designation": "Anaesthesiologist Specialist"
+    },
+    {
+        "id": 16,
+        "name": "Afra Tabassum",
+        "img": "https://i.ibb.co/3dz4LYd/d7.jpg",
+        "designation": "Anaesthesiologist Specialist"
+    },
+    {
+        "id": 17,
+        "name": "Owahida Zaman",
+        "img": "https://i.ibb.co/717Zm0w/d6-1.jpg",
+        "designation": "Gastroenterologist Specialist"
+    },
+    {
+        "id": 18,
+        "name": "Ishtiak Ahmed",
+        "img": "https://i.ibb.co/X5CsMZh/d8.jpg",
+        "designation": "Gastroenterologist Specialist"
+    }
+]

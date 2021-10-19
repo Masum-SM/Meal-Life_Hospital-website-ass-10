@@ -1,0 +1,18 @@
+
+
+.login{
+    background-image: url('https://i.ibb.co/YPqrn4F/sign.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 103%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   
+}
+
+.login-body{
+ 
+}

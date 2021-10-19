@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Medical Departments",
+        "img": "https://i.ibb.co/tY6h5DF/deperment.png",
+        "description": {
+            "ds1": "Cardiology",
+            "ds2": "Neurology",
+            "ds3": "Orthopedics",
+            "ds4": "Gestroenterology",
+            "ds5": "General Surgery"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Diahnostic Services",
+        "img": "https://i.ibb.co/R49kYsP/diagnostic.png",
+        "description": {
+            "ds1": "Cardiac Diagnostics",
+            "ds2": "Nuclear Imaging",
+            "ds3": "Ultrasound",
+            "ds4": "X-Ray",
+            "ds5": "MRI"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Blood Bank",
+        "img": "https://i.ibb.co/zSjqN4T/blood-bank.png",
+        "description": {
+            "ds1": "Red Blood Cells",
+            "ds2": "Platelets",
+            "ds3": "Plasma",
+            "ds4": "Whole Blood",
+            "ds5": "Blood Products for Research"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Pharmacy",
+        "img": "https://i.ibb.co/SQ8xXdv/pharmacy.png",
+        "description": {
+            "ds1": "Cardiology",
+            "ds2": "Neurology",
+            "ds3": "Orthopedics",
+            "ds4": "Gestroenterology",
+            "ds5": "General Surgery"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Ambulance",
+        "img": "https://i.ibb.co/khyVG0j/ambulance.png",
+        "description": {
+            "ds1": "Ems Ambulance Service",
+            "ds2": "Free Ambulance Service",
+            "ds3": "OrthopePrivate Ambulance Servicedics",
+            "ds4": "Alert Ambulance Service",
+            "ds5": "Air Ambulance Service"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Covid-19 Services",
+        "img": "https://i.ibb.co/Nr9wQMQ/covid-19.jpg",
+        "description": {
+            "ds1": "Covid-19 Test",
+            "ds2": "Covid-19 vaccination Center",
+            "ds3": "Covid-19 Emergency Health Care",
+            "ds4": "Online Treatment",
+            "ds5": "Covid-19 patient's All test"
+        }
+    }
+]

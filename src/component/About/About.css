@@ -1,0 +1,41 @@
+
+.about-header{
+    width: 98%;
+    margin: auto;
+}
+.about-img img{
+    width: 100%;
+}
+.about-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.features-container{
+    /* margin: 20px; */
+    margin-top: 40px;
+    width: 98%;
+    margin-right: auto;
+    
+}
+.about-features{
+    color: rgb(87, 3, 167);
+    font-weight: 700;
+    
+}
+.line{
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+.list-section{
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.patient-care{
+    padding: 30px;
+    text-align: start;
+}
+.future{
+    padding: 30px;
+    text-align: start;
+}
