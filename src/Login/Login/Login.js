@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebse from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+// import useFirebse from '../../hooks/useFirebase';
 
 
 import './Login.css'
 
 const Login = () => {
-    const { signInWithGoogle } = useFirebse()
+    const { signInWithGoogle, processLogedIn, handleEmailChange, handlePasswordChange, handleRegistration } = useAuth()
     return (
         <div className='login row'>
             <div className="col-12 col-lg-6 login-body">
                 <h1>Meal Life Hospital</h1>
                 <p>Welcome to Meal Life Hospital</p>
-                <form >
-                    <input className='email' type="email" name="" id="" placeholder='Email' /> <br />
-                    <input className='password' type="password" name="" id="" placeholder='Password' /><br />
-                    <input className='submit' type="submit" value="Submit" />
+                <form onSubmit={handleRegistration}>
+                    <input className='email' onBlur={handleEmailChange} type="email" name="" id="" placeholder='Email' /> <br />
+                    <input className='password' onBlur={handlePasswordChange} type="password" name="" id="" placeholder='Password' /><br />
+                    <button type='submit' onClick={processLogedIn}>Log In</button>
+
                 </form>
                 <br />
                 <p>------------ OR ------------</p>

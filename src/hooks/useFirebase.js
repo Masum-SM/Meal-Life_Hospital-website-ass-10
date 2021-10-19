@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useEffect } from "react";
 import initializeAuthentication from "../component/Firebase.config/Firebase.init";
 initializeAuthentication()
@@ -9,20 +9,92 @@ initializeAuthentication()
 
 
 const useFirebse = () => {
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState({});
+    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true)
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
 
+    // Google sign in 
     const signInWithGoogle = () => {
-        return signInWithPopup(auth, googleProvider);
+        setIsLoading(true);
+        return signInWithPopup(auth, googleProvider)
+            .catch(eror => {
+                const errormessage = error.message;
+                setError(errormessage)
+            })
+            .finally(() => setIsLoading(false));
 
     }
 
+
+    // set user email and password 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const hanldeUserName = e => {
+        console.log(e.target.value)
+        setName(e.target.value)
+    }
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value)
+    }
+    const handlePasswordChange = e => {
+        setPassword(e.target.value)
+    }
+
+
+    const handleRegistration = e => {
+        e.preventDefault()
+        console.log(email, password)
+        if (password.length < 6) {
+            setError('Password Must be at least 6 Character.')
+            return;
+        }
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user
+                console.log(user)
+                setError('');
+                setUserName()
+
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+            .finally(() => setIsLoading(true))
+
+    }
+    const processLogedIn = () => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                setError('')
+                console.log(user)
+                setUser(user);
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+            .finally(() => setIsLoading(true))
+    }
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => { })
+    }
+
+
+
+    // sign Out 
     const logOut = () => {
+        setIsLoading(true)
         signOut(auth)
             .then(() => {
                 setUser({})
             })
+            .finally(() => setIsLoading(false))
     }
 
     useEffect(() => {
@@ -30,6 +102,10 @@ const useFirebse = () => {
             if (user) {
                 setUser(user)
             }
+            else {
+                setUser({})
+            }
+            setIsLoading(false)
         })
     }, [])
 
@@ -38,7 +114,15 @@ const useFirebse = () => {
     return {
         user,
         setUser,
+        error,
+        hanldeUserName,
+        isLoading,
         signInWithGoogle,
+        handleRegistration,
+        handleEmailChange,
+        handlePasswordChange,
+
+        processLogedIn,
         logOut
     }
 }
