@@ -12,15 +12,16 @@ const Service = ({ service }) => {
                     <img src={img} className='card-img-top' alt="" />
                 </div>
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text"> {ds1} </p>
-                    <p className="card-text"> {ds2} </p>
-                    <p className="card-text"> {ds3} </p>
-                    <p className="card-text"> {ds4} </p>
-                    <p className="card-text"> {ds5} </p>
+                    <h5 className="card-title">Service Faculty : {name}</h5>
+                    <h6 className='services-description'>Services</h6>
+                    <p className="card-text"> -{ds1} </p>
+                    <p className="card-text"> -{ds2} </p>
+                    <p className="card-text"> -{ds3} </p>
+                    <p className="card-text"> -{ds4} </p>
+                    <p className="card-text"> -{ds5} </p>
                 </div>
                 <Link to={`/moreInfo/${id}`}>
-                    <button>More Information</button>
+                    <button className='service-butthon'>More Information</button>
                 </Link>
             </div>
 

@@ -8,7 +8,7 @@ const Doctor = ({ doctor }) => {
                 <div className="doctor-img">
                     <img src={img} alt="" />
                 </div>
-                <div className="doctor-contianer">
+                <div className="dctr-contianer">
                     <h3>Name : {name}</h3>
                     <p> {designation} </p>
                 </div>

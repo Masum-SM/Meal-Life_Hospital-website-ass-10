@@ -4,12 +4,12 @@ import './About.css'
 const About = () => {
     return (
         <div>
-            <h2>About Meal Life Hospital</h2>
+            <h2 className='about-title'>About Meal Life Hospital</h2>
             <div className="row about-header">
                 <div className="col-12 col-lg-6 about-img">
                     <img src="images/cover-1.png" alt="" />
                 </div>
-                <div className="col-12 col-lg-6 ">
+                <div className="col-12 col-lg-6 about-info">
                     <p> As our community’s public health system, Meal Life Hospital is the foundation for a healthy Dallas.</p>
 
                     <p>That’s why we ask ourselves every day, how can we better serve our patients?</p>

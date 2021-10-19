@@ -11,7 +11,7 @@ const Services = () => {
     }, [])
     return (
         <div id='services'>
-            <h2>Our Services</h2>
+            <h2 className='services-header'>Our Services</h2>
             <div className="row row-cols-1 row-cols-md-2 g-4 services-container">
                 {
                     services.map(service => <Service

@@ -14,16 +14,16 @@ const Login = () => {
                 <h1>Meal Life Hospital</h1>
                 <p>Welcome to Meal Life Hospital</p>
                 <form onSubmit={handleRegistration}>
-                    <input className='email' onBlur={handleEmailChange} type="email" name="" id="" placeholder='Email' /> <br />
-                    <input className='password' onBlur={handlePasswordChange} type="password" name="" id="" placeholder='Password' /><br />
-                    <button type='submit' onClick={processLogedIn}>Log In</button>
+                    <input className='email log-input' onBlur={handleEmailChange} type="email" name="" id="" placeholder='Email ' /> <br />
+                    <input className='password log-input' onBlur={handlePasswordChange} type="password" name="" id="" placeholder='Password' /><br />
+                    <button className='log-btn' type='submit' onClick={processLogedIn}>Log In</button>
 
                 </form>
                 <br />
                 <p>------------ OR ------------</p>
-                <button onClick={signInWithGoogle} >Sign In With Google</button><br /><br />
+                <button className='log-btn' onClick={signInWithGoogle} >Sign In With Google</button><br /><br />
 
-                <p>New User? <Link to='/register'>Create Account</Link></p>
+                <p>New User? <Link to='/register' className='log-option'>Create Account</Link></p>
             </div>
 
 

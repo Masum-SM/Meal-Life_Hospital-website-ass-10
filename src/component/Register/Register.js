@@ -10,20 +10,20 @@ const Register = () => {
         <div className='register-form row'>
             <div className="col-12 col-lg-12 register-body">
                 <h2>Welcome to Meal Life Hospital</h2>
-                <h1>Register: Create Account</h1>
+                <h1>Create Account</h1>
                 <form onSubmit={handleRegistration}>
-                    <input onBlur={hanldeUserName} type="text" name="" id="" placeholder='User Name' /><br />
-                    <input onBlur={handleEmailChange} type="email" name="" id="" placeholder='Email' required /><br />
-                    <input onBlur={handlePasswordChange} type="password" name="" id="" placeholder='Password' required /><br />
+                    <input onBlur={hanldeUserName} className='log-input' type="text" name="" id="" placeholder='User Name' /><br />
+                    <input onBlur={handleEmailChange} className='log-input' type="email" name="" id="" placeholder='Email' required /><br />
+                    <input onBlur={handlePasswordChange} className='log-input' type="password" name="" id="" placeholder='Password' required /><br />
                     <div className='text-danger'>{error}</div>
 
-                    <button type='submit'>Registration</button>
+                    <button className='log-btn' type='submit'>Registration</button>
                     {/* <input type="submit" onClick={handleRegistration} value="Registration" /> */}
                 </form>
 
-                <p>Already have an account?<Link to='/login'>Log In</Link></p>
+                <p>Already have an account?<Link to='/login' className='log-option'>Log In</Link></p>
                 <div>----------Or----------</div>
-                <button>Google Sign In</button>
+                <button className='log-btn'>Google Sign In</button>
             </div>
 
         </div>

@@ -8,7 +8,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
     const { user, logOut } = useAuth()
-    // const { user, logOut } = useFirebse();
+
     return (
         <>
             <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">

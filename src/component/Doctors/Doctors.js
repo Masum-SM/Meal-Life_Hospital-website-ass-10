@@ -11,15 +11,15 @@ const Doctors = () => {
     }, [])
     return (
         <div className='doctors-container'>
-            <h2>Doctors Information</h2>
-            <div>
+            <h2 className='doctor-tilte'>Doctors Information</h2>
+            <div className='doctors-container'>
                 <div className='row row-cols-1 row-cols-md-2 '>
                     <div className="col">
                         <div className="row chairman">
                             <div className="col-12 col-lg-6 chairman-img">
                                 <img src="images/doctors/dc1.jpg" alt="" />
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div className="col-12 col-lg-6 doctor-description">
                                 <h3>Name : Salam Ranham</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Cardiology</p>
@@ -35,7 +35,7 @@ const Doctors = () => {
                             <div className="col-12 col-lg-6 chairman-img">
                                 <img src="images/doctors/dc2.jpg" alt="" />
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div className="col-12 col-lg-6 doctor-description">
                                 <h3>Name : Humayra Habib</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Neurosurgery</p>
@@ -49,7 +49,7 @@ const Doctors = () => {
                             <div className="col-12 col-lg-6 chairman-img">
                                 <img src="images/doctors/dc3.jpg" alt="" />
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div className="col-12 col-lg-6 doctor-description">
                                 <h3>Name : Abdullah Muhaimin</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Hepatology</p>
@@ -65,7 +65,7 @@ const Doctors = () => {
                                 <img src="images/doctors/dc4.jpg" alt="" />
 
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div className="col-12 col-lg-6 doctor-description">
                                 <h3>Name : Unus Masum</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Gastroenterology</p>

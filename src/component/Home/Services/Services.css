@@ -3,3 +3,13 @@
     justify-content: center;
   margin: 20px;
 }
+#services{
+  background-color: rgb(8, 8, 8);
+  padding-bottom: 20px;
+
+}
+.services-header{
+  color: white;
+  padding-top: 28px;
+  font-weight: 900;
+}

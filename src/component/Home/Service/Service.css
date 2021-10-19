@@ -1,2 +1,22 @@
 
-
+.card-body p{
+    border: 1px solid orange;
+    border-radius: 15px;
+}
+.card-title{
+    color: orange;
+    font-weight: 800;
+}
+.services-description{
+    background-color: black;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+}
+.service-butthon{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: orange;
+    padding: 5px 10px;
+    
+}

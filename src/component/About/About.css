@@ -1,14 +1,37 @@
 
+.about-title{
+    margin-bottom: 50px;
+    background-color:gray;
+    border-radius: 15px;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
+    line-height: 50px;
+    border: 2px solid black;
+    color: white;
+    margin-top: 40px;
+}
 .about-header{
     width: 98%;
     margin: auto;
+    margin-top: 30px;
+    padding: 20px;
 }
 .about-img img{
     width: 100%;
+    border-radius: 20px;
+}
+.about-info{
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    
 }
 .about-body{
     display: flex;
     justify-content: space-evenly;
+    width: 95%;
 }
 .features-container{
     /* margin: 20px; */

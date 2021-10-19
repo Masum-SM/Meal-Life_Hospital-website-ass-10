@@ -1,11 +1,24 @@
 
 .doctor{
-    border: 2px solid gold;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
 
 }
 .doctor-img img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid black;
+}
+.dctr-contianer{
+    margin-left: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.dctr-contianer h3{
+    font-weight: 800;
+}
+.dctr-contianer p{
+    color: orange;
 }
