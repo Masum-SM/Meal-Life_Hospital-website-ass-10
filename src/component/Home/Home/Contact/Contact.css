@@ -2,4 +2,24 @@
 
 .contact-container{
     padding: 30px 20px;
+    background-color: black;
+    color: whitesmoke;
+}
+.contact-us{
+    border: 2px solid orange;
+    padding: 10px 0;
+    background-color: gray;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.addres h3{
+    
+    color: orange;
+    font-weight: 800;
+}
+
+.contact h3{
+    color: orange;
+    font-weight: 800;
 }
