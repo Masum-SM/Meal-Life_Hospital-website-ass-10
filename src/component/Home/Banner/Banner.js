@@ -13,8 +13,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>MEAL LIFE HOSPITAL</h3>
-                        <p>Main Building view of Meal Life Hospital.</p>
+                        <h3>MEND LIFE HOSPITAL</h3>
+                        <p>Main Building view of Mend Life Hospital.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -26,7 +26,7 @@ const Banner = () => {
 
                     <Carousel.Caption>
                         <h3>INTERNAL VIEW OF HOSPITAL</h3>
-                        <p>Internal view of Meal Life Hospital.</p>
+                        <p>Internal view of Mend Life Hospital.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

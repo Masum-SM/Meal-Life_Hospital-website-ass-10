@@ -4,7 +4,7 @@ import './About.css'
 const About = () => {
     return (
         <div>
-            <h2 className='about-title'>About Meal Life Hospital</h2>
+            <h2 className='about-title'>About Mend Life Hospital</h2>
             <div className="row about-header">
                 <div className="col-12 col-lg-6 about-img">
                     <img src="images/cover-1.png" alt="" />

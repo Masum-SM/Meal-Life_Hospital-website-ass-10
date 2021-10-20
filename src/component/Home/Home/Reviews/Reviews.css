@@ -1,0 +1,24 @@
+
+.review-container{
+    padding: 20px;
+    background-color: gray;
+    padding-top: 30px;
+    color: whitesmoke;
+   
+}
+.sigle-review{
+    margin: auto;
+   width: 90%;
+   padding: 20px;
+}
+.review{
+    border: 2px solid black;
+    /* margin-right: 10px; */
+    padding: 10px;
+}
+.review h3{
+    color: orange;
+}
+.review p{
+    text-align: justify;
+}

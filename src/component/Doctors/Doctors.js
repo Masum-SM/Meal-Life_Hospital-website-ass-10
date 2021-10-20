@@ -20,7 +20,7 @@ const Doctors = () => {
                                 <img src="images/doctors/dc1.jpg" alt="" />
                             </div>
                             <div className="col-12 col-lg-6 doctor-description">
-                                <h3>Name : Salam Ranham</h3>
+                                <h3>Name:Salam Ranham</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Cardiology</p>
                                 <small>Meal Life Hospital ratings for cardiology and heart surgery. U.S. News evaluated 592 hospitals and ranked the top 50 that care for patients with challenging heart and vascular cases including heart transplants, implantation of cardiac devices such as pacemakers</small>
@@ -36,7 +36,7 @@ const Doctors = () => {
                                 <img src="images/doctors/dc2.jpg" alt="" />
                             </div>
                             <div className="col-12 col-lg-6 doctor-description">
-                                <h3>Name : Humayra Habib</h3>
+                                <h3>Name:Humayra Habib</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Neurosurgery</p>
                                 <small>Meal Life Hospital rankings for neurology and neurosurgery. U.S. News evaluated 1,248 hospitals and ranked the top 50 that treat many challenging neurological patients for brain hemorrhage, conditions affecting the central nervous system</small>
@@ -50,7 +50,7 @@ const Doctors = () => {
                                 <img src="images/doctors/dc3.jpg" alt="" />
                             </div>
                             <div className="col-12 col-lg-6 doctor-description">
-                                <h3>Name : Abdullah Muhaimin</h3>
+                                <h3>Name:Abdullah Muhaimin</h3>
                                 <h4>Chairman</h4>
                                 <p>Depertment : Hepatology</p>
                                 <small>The Vanderbilt Hepatology and Liver Transplant Center is the largest program of its kind in Tennessee. Experts in all areas of liver disease participate in the evaluation, management, treatment and follow-up of our patients including options for transplantation.</small>

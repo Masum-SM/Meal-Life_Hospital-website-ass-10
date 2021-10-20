@@ -1,0 +1,28 @@
+
+.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: orange !important;
+}
+.logo span{
+    font-size: 16px;
+    color: white !important;
+}
+.nav-anchor{
+    color: orange !important;
+    font-weight: 800;
+}
+.inout-btn{
+    outline: none;
+    background-color: black;
+    color: orange;
+    border: 2px solid orange;
+    padding: 4px 7px;
+    border-radius: 10px;
+}
+
+.signed-user{
+    color: whitesmoke !important;
+    font-weight: 600;
+}

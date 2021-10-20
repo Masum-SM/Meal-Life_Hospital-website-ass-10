@@ -3,6 +3,7 @@ import { useState } from "react"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useEffect } from "react";
 import initializeAuthentication from "../component/Firebase.config/Firebase.init";
+
 initializeAuthentication()
 
 
@@ -28,6 +29,8 @@ const useFirebse = () => {
     }
 
 
+
+
     // set user email and password 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -46,40 +49,54 @@ const useFirebse = () => {
     }
 
 
+
     const handleRegistration = e => {
-        e.preventDefault()
+        // e.preventDefault()
         console.log(email, password)
         if (password.length < 6) {
             setError('Password Must be at least 6 Character.')
             return;
         }
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user
-                console.log(user)
-                setError('');
-                setUserName()
 
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-            .finally(() => setIsLoading(true))
+        return createUserWithEmailAndPassword(auth, email, password)
+
+        // .then(result => {
+        //     const user = result.user
+        //     console.log(user)
+        //     setError('');
+        //     setUserName()
+
+        //     window.location.reload()
+
+
+        // })
+
+        //     .catch(error => {
+        //         setError(error.message)
+        //     })
+        //     .finally(() => setIsLoading(true))
 
     }
+
+
+
+
     const processLogedIn = () => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user;
-                setError('')
-                console.log(user)
-                setUser(user);
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-            .finally(() => setIsLoading(true))
+        return signInWithEmailAndPassword(auth, email, password)
+
     }
+
+
+    // const processLogedIn = () => {
+    //     return signInWithEmailAndPassword(auth, email, password)
+
+    //     // .catch(error => {
+    //     //     setError(error.message)
+    //     // })
+    //     // .finally(() => setIsLoading(true))
+
+    // }
+
     const setUserName = () => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => { })
@@ -114,9 +131,12 @@ const useFirebse = () => {
     return {
         user,
         setUser,
+        setError,
+        setUserName,
         error,
         hanldeUserName,
         isLoading,
+        setIsLoading,
         signInWithGoogle,
         handleRegistration,
         handleEmailChange,
